@@ -39,6 +39,7 @@ public class App {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
         String hello = context.getBean("hello", String.class);
         String hello1 = context.getBean("hello", String.class);
-        System.out.println(hello == hello1);
+        System.out.println(hello.equals(hello1));
+
     }
 }
