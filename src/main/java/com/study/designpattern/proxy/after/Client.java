@@ -9,8 +9,7 @@ public class Client {
     public static void main(String[] args) throws InterruptedException {
         GameServiceProxy gameServiceProxy = new GameServiceProxy();
         gameServiceProxy.startGame();
-
-
+/*
         return (GameService) Proxy.newProxyInstance(this.getClass().getClassLoader(), new Class[]{GameService.class}, new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
@@ -19,6 +18,6 @@ public class Client {
                 return null;
             }
         })
-
+*/
     }
 }
